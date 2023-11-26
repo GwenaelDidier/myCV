@@ -1,0 +1,12 @@
+#contact {
+    background-color: #333;
+    padding: 2em;
+}
+
+.contact-link {
+    color: #eee;
+}
+
+.card-contact {
+    background: transparent !important;
+}

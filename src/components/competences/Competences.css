@@ -1,0 +1,8 @@
+#skills {
+    background-color: #333;
+    padding: 2em;
+}
+
+.skill-part {
+    flex: 1 1 500px;
+}

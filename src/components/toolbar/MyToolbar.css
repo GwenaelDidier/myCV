@@ -1,0 +1,9 @@
+.btn-appbar-active {
+    background-color: #444 !important;
+    border-top: 1px solid #AAA !important;
+    border-bottom: 1px solid #AAA !important;
+    border-radius: 0 !important;
+    color: #DDD !important;
+
+    transition: all 1s !important;
+}

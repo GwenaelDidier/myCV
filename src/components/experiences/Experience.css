@@ -1,0 +1,88 @@
+.xp-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.xp-block-dates {
+    font-style: oblique;
+    color: #CCC;
+}
+
+.xp-block-left {
+    border-right: 4px solid white;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.xp-block-right {
+    border-left: 4px solid white;
+    justify-content: flex-end;
+    width: calc(50% - 4px);
+    margin-left: 50%;
+}
+
+.xp-block-content {
+    display: flex;
+    justify-content: center;
+
+}
+
+.xp-block-tags {
+    margin-left: 15%;
+    margin-right: 15%;
+    border-top: 1px solid #AAA;
+    padding-top: 1em;
+    ;
+}
+
+.xp-block-tag {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.dot-left {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: calc(50% - 14px);
+}
+
+.dot-right {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 10px);
+}
+
+.xp-block-client-from::after {
+    content: '\2192';
+    font-size: 18px;
+}
+
+.xp-block-left > .xp-block-client {
+    position: absolute;
+    right: calc(50% + 20px);
+    top: 4px;
+}
+
+.xp-block-right > .xp-block-client {
+    position: absolute;
+    right: calc(50% - 100px);
+    top: 4px;
+}
+
+.xp-block-title-entreprise {
+    font-size: 0.8em;
+    font-style: oblique;
+}
