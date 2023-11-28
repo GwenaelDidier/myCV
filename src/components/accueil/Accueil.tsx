@@ -1,19 +1,19 @@
-import { Box, Typography, Card, CardMedia, CardContent, CardActions, List, ListItem, ListItemAvatar, Avatar, ListItemText, Divider, Icon } from "@mui/material";
-import portrait from "../../images/portrait-cv-1.jpg";
-import { BusinessCenter, LocalActivity, VerifiedUser, ThumbUpOffAlt, Call, AlternateEmail, Person } from '@mui/icons-material';
 import './Accueil.css';
-import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
-import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
-import ContactPageIcon from '@mui/icons-material/ContactPage';
-import DirectionsCarFilledOutlinedIcon from '@mui/icons-material/DirectionsCarFilledOutlined';
-import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
-import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
-import DnsOutlinedIcon from '@mui/icons-material/DnsOutlined';
-import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
+
+import { BusinessCenter, LocalActivity, ThumbUpOffAlt, VerifiedUser } from '@mui/icons-material';
 import AllInclusiveOutlinedIcon from '@mui/icons-material/AllInclusiveOutlined';
-import LoopOutlinedIcon from '@mui/icons-material/LoopOutlined';
+import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
+import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import DnsOutlinedIcon from '@mui/icons-material/DnsOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LoopOutlinedIcon from '@mui/icons-material/LoopOutlined';
+import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
+import { Box, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
+
+import portrait from '../../images/portrait-cv-1.jpg';
 
 function Accueil() {
 
