@@ -1,10 +1,11 @@
-import { Avatar, Chip, Divider, List, ListItem, ListItemText, Typography } from '@mui/material';
-import myXP from './myXP.json';
 import './Experience.css';
-import logoThales from '../../images/Thales_Logo.svg';
+
+import { Chip, List, ListItem, ListItemText, Typography } from '@mui/material';
+
 import logoTotal from '../../images/911px-Logo_TotalEnergies.svg.png';
-import logoNeosoft from '../../images/logo-neosoft-white.svg';
 import logoAkka from '../../images/akka.jpg';
+import logoNeosoft from '../../images/logo-neosoft-white.svg';
+import logoThales from '../../images/Thales_Logo.svg';
 
 function Experiences() {
 
@@ -16,12 +17,12 @@ function Experiences() {
                 </Typography>
             </h1>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                
+
             <div className='xp-block' id="premier">
                     <div className='xp-block-left'>
 
                         <Typography gutterBottom variant="h5" component="div" textAlign="center" marginTop="1em" fontWeight='bold'>
-                            <img src={logoThales} height='20px' />
+                            <img src={logoThales} alt="logo Thales" height='20px' />
                             <span style={{ marginLeft: '1em' }}>Tech Lead - Développement WEB</span>
                         </Typography>
                         <div className='xp-block-dates'>
@@ -59,7 +60,7 @@ function Experiences() {
                         <span className='dot-left'></span>
 
                         <span className='xp-block-client'>
-                            <img src={logoTotal} height='60px' />
+                            <img src={logoTotal} alt="logo TotalEnergies" height='60px' />
                         </span>
                     </div>
                 </div>
@@ -69,7 +70,7 @@ function Experiences() {
 
 
                         <Typography gutterBottom variant="h5" component="div" textAlign="center" marginTop="1em" fontWeight='bold'>
-                            <img src={logoThales} height='20px' />
+                            <img src={logoThales} alt="logo Thales" height='20px' />
                             <span style={{ marginLeft: '1em' }}>Tech Lead - Développement WEB</span>
                         </Typography>
                         <div className='xp-block-dates'>
@@ -101,7 +102,7 @@ function Experiences() {
                         <span className='dot-right'></span>
 
                         <span className='xp-block-client'>
-                            <img src={logoTotal} height='60px' />
+                            <img src={logoTotal} alt="logo TotalEnergies" height='60px' />
                         </span>
                     </div>
                 </div>
@@ -109,7 +110,7 @@ function Experiences() {
                 <div className='xp-block' id="troisieme">
                     <div className='xp-block-left'>
                         <Typography gutterBottom variant="h5" component="div" textAlign="center" marginTop="1em" fontWeight='bold'>
-                            <img src={logoThales} height='20px' />
+                            <img src={logoThales} alt="logo Thales" height='20px' />
                             <span style={{ marginLeft: '1em' }}> Développeur WEB Full Stack</span>
                         </Typography>
 
@@ -136,7 +137,7 @@ function Experiences() {
                         <span className='dot-right'></span>
 
                         <span className='xp-block-client'>
-                            <img src={logoTotal} height='60px' />
+                            <img src={logoTotal} alt="logo TotalEnergies" height='60px' />
                         </span>
                     </div>
                 </div>
@@ -144,7 +145,7 @@ function Experiences() {
                 <div className='xp-block'>
                     <div className='xp-block-right'>
                         <Typography gutterBottom variant="h5" component="div" textAlign="center" marginTop="1em" fontWeight='bold'>
-                            <img src={logoNeosoft} height='20px' />
+                            <img src={logoNeosoft} alt="logo Neosoft" height='20px' />
                             <span style={{ marginLeft: '1em' }}></span>Développeur WEB Frontend <small className='xp-block-title-entreprise'> (Airbus Geo Intelligence)</small>
                         </Typography>
                         <div className='xp-block-dates'>
@@ -181,8 +182,8 @@ function Experiences() {
                 <div className='xp-block'>
                     <div className='xp-block-left'>
                         <Typography gutterBottom variant="h5" component="div" textAlign="center" marginTop="1em" fontWeight='bold'>
-                            <img src={logoAkka} height='20px' />
-                            <span style={{ marginLeft: '1em' }}> Développeur WEB Full Stack 
+                            <img src={logoAkka} alt="logo Akka" height='20px' />
+                            <span style={{ marginLeft: '1em' }}> Développeur WEB Full Stack
                                 <small className='xp-block-title-entreprise'> (Airbus Defense and Space)</small>
                             </span>
                         </Typography>
