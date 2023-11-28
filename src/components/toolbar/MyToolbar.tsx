@@ -1,10 +1,12 @@
-import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
-import { useState } from "react";
 import './MyToolbar.css';
+
+
+
+import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material';
 
 function MyToolbar(props) {
 
-  const navItems = [
+  /*const navItems = [
     { label: 'Accueil', path: '#home' },
     { label: 'Diplômes', path: '#diplomes' },
     { label: 'Compétences', path: '#skills' },
@@ -16,7 +18,7 @@ function MyToolbar(props) {
   const [diplomeIsActive, setDiplomeIsActive] = useState(false);
   const [competencesIsActive, setCompetenceIsActive] = useState(false);
   const [experienceIsActive, setExperienceIsActive] = useState(false);
-  const [contactIsActive, setContactIsActive] = useState(false);
+  const [contactIsActive, setContactIsActive] = useState(false);*/
 
 
   const activeSection = props.activeSection;
@@ -26,7 +28,7 @@ function MyToolbar(props) {
     const element = document.getElementById(item);
     if (element) element.scrollIntoView({ behavior: 'smooth' });
 
-    switch (item) {
+    /*switch (item) {
 
       case 'home':
         setHomeIsActive(true);
@@ -67,7 +69,7 @@ function MyToolbar(props) {
         setExperienceIsActive(false);
         setContactIsActive(true);
         break;
-    }
+    }*/
   }
 
   return (
