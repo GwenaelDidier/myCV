@@ -11,6 +11,7 @@ import Diplome from './components/diplomes/Diplome';
 import MyToolbar from './components/toolbar/MyToolbar';
 import Experiences from './components/experiences/Experience';
 import Competences from './components/competences/Competences';
+import Perso from './components/perso/Perso';
 import { useEffect, useState } from 'react';
 import Footer from './components/footer/Footer';
 
@@ -81,6 +82,7 @@ function App() {
           <Diplome />
           <Competences />
           <Experiences />
+          <Perso />
         </div>
 
         <Footer />
