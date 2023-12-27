@@ -1,37 +1,36 @@
-import './App.css';
+import "./App.css";
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
-import { ThemeProvider, createTheme } from '@mui/material';
-import Accueil from './components/accueil/Accueil';
-import Diplome from './components/diplomes/Diplome';
-import MyToolbar from './components/toolbar/MyToolbar';
-import Experiences from './components/experiences/Experience';
-import Competences from './components/competences/Competences';
-import Perso from './components/perso/Perso';
-import { useEffect, useState } from 'react';
-import Footer from './components/footer/Footer';
-
+import { ThemeProvider, createTheme } from "@mui/material";
+import Accueil from "./components/accueil/Accueil";
+import Diplome from "./components/diplomes/Diplome";
+import MyToolbar from "./components/toolbar/MyToolbar";
+import Experiences from "./components/experiences/Experience";
+import Competences from "./components/competences/Competences";
+import Perso from "./components/perso/Perso";
+import { useEffect, useState } from "react";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const darkTheme = createTheme({
     palette: {
-      mode: 'dark',
+      mode: "dark",
       primary: {
-        main: '#1976d2',
+        main: "#1976d2",
       },
     },
   });
 
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const sections = document.querySelectorAll('section');
+      const sections = document.querySelectorAll("section");
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -42,9 +41,9 @@ function App() {
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -54,15 +53,19 @@ function App() {
       setActiveSection(sectionFromUrl);
     };
 
-    window.addEventListener('hashchange', handleUrlAnchorChange);
+    window.addEventListener("hashchange", handleUrlAnchorChange);
     return () => {
-      window.removeEventListener('hashchange', handleUrlAnchorChange);
+      window.removeEventListener("hashchange", handleUrlAnchorChange);
     };
   }, []);
 
   useEffect(() => {
     window.location.hash = activeSection;
   }, [activeSection]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="App">
@@ -75,7 +78,7 @@ function App() {
             width: "100%",
             margin: "auto",
             marginTop: "64px",
-            backgroundColor: "#212121"
+            backgroundColor: "#212121",
           }}
         >
           <Accueil />

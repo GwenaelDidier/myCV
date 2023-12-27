@@ -34,3 +34,7 @@ blockquote {
 .contact-link {
     color: #eee;
 }
+
+#portrait {
+    object-fit: contain;
+}
